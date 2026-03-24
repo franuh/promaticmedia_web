@@ -1,3 +1,7 @@
+body {
+  background-color: #B7E00A;
+  margin: 0;
+}
 
 /* Hide the actual checkbox */
 .drawer-toggle {
@@ -6,7 +10,7 @@
 
 /* Style the label as a hamburger icon/button (position it on the right) */
 .drawer-toggle-label {
-  position: fixed;
+  position: absolute;
   right: 20px;
   top: 10px;
   cursor: pointer;
@@ -20,7 +24,7 @@
   width: 250px; /* Adjust width as needed */
   position: fixed;
   top: 0;
-  right: -250px; /* Hide it off-screen */
+  right: -500px; /* Hide it off-screen */
   background-color: #000;
   overflow-x: hidden;
   transition: right 0.5s ease; /* Smooth transition */
@@ -72,20 +76,21 @@
 
 
 .parent-header {
-  position: sticky; /* Makes the header sticky within its container */
-  top: 0; /* Sticks to the top of the scrollable container */
+  position: sticky; 
+  width: 100%;
+  top: 0; 
   z-index: 1;
   background-color: black;
-  border: var(--parent);
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 20px 10px 20px 20px;
+  padding: 20px 0px;
 }
 
 .child-header-logo {
   font-family:Arial, Helvetica, sans-serif;
   color: white;
   margin: auto 0 auto 0;
+  padding-left: 20px;
 }
 
 
@@ -97,19 +102,6 @@
   text-decoration: none;
   text-align: right;
   margin: 5px 50px 0px 0px;
-}
-
-.child-header-button {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: white;
-  background-color: #0062D8;
-  text-align: center;
-  margin: auto auto auto auto;
-  border-color: none;
-  border-style: none;
-  border-radius: 21px;
-  padding: 5px;
 }
 
 
@@ -130,14 +122,14 @@
 }
 
 .child-video h1 {
-  width: 80%;
+  width: 90%;
   font-family: Arial, Helvetica, sans-serif;
-  position: absolute; /* Positions the text relative to its parent (.video-container) */
-  top: 40%; /* Starts the text at the middle of the container */
-  left: 50%; /* Starts the text at the middle of the container */
-  transform: translate(-50%, -50%); /* Centers the text precisely */
-  color: white; /* Make text visible against a potentially dark video */
-  font-size: clamp(1rem, 3vw, 3rem); /* Adjust size as needed */
+  position: absolute; 
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: clamp(1rem, 4vw, 3rem); 
   text-align: center;
   /* Optional: Add a text shadow for better legibility */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -146,19 +138,64 @@
 .child-video p {
   width: 80%;
   font-family: Arial, Helvetica, sans-serif;
-  position: absolute; /* Positions the text relative to its parent (.video-container) */
-  top: 55%; /* Starts the text at the middle of the container */
-  left: 50%; /* Starts the text at the middle of the container */
-  transform: translate(-50%, -50%); /* Centers the text precisely */
-  color: white; /* Make text visible against a potentially dark video */
-  font-size: clamp(0.5rem, 3vw, 1rem); /* Adjust size as needed */
+  position: absolute; 
+  top: 60%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 1.5rem;
   text-align: center;
   /* Optional: Add a text shadow for better legibility */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.child-video-2 h1 {
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute; 
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: clamp(1rem, 4vw, 3rem); 
+  text-align: center;
+  /* Optional: Add a text shadow for better legibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.child-video-2 p {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute; 
+  top: 55%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 1.5rem;
+  text-align: center;
+  /* Optional: Add a text shadow for better legibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.child-video-3 h1 {
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute; 
+  top: 45%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: clamp(1.5rem, 4vw, 3rem); 
+  text-align: center;
+  /* Optional: Add a text shadow for better legibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
 .parent-grid {
   margin-top: 10px;
+  width: 100%;
   display: grid;
   gap: 0rem;
   grid-template-columns: 50% 50%;
@@ -260,7 +297,7 @@
 
 .text {
   font-family:Arial, Helvetica, sans-serif;
-  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-size: 1rem;
   color: black;
   position: absolute;
   top: 50%;
@@ -274,6 +311,7 @@
 
 .parent-banner {
   margin-top: 10px;
+  width: 100%;
 }
 
 .child-banner {
@@ -296,7 +334,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: 2rem;
   text-align: center;
   color: white;
 }
@@ -305,6 +343,7 @@
 
 
 .parent-conocemas {
+  width: 100%;
   display: flex;
   background-color: white;
 }
@@ -322,12 +361,14 @@
   padding: 10px;
   border-radius: 21px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
+  background-color: #fff;
 }
 
 
 
 .parent-column {
+  width: 100%;
   margin-top: 10px;
   display: grid;
   gap: 1rem;
@@ -367,9 +408,11 @@
 
 
 .parent-column-new {
+  width: 100%;
   margin-top: 10px;
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 0rem;
   background-color: #060464;
 }
 
@@ -391,11 +434,13 @@
   font-family:Arial, Helvetica, sans-serif;
   text-align: center;
   color: white;
+  margin: 16px 5%;
 }
 
 
 
 .parent-trabajamos {
+  width: 100%;
   margin-top: 10px;
   display: flex;
   background-color: black;
@@ -428,6 +473,7 @@
 
 
 .parent-recientes {
+  width: 100%;
   display: flex;
 }
 
@@ -450,9 +496,9 @@
 }
 
 .parent-photos {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   gap: 0rem;
-  grid-template-columns: 50% 50%;
 }
 
 .child-photo1 {
@@ -555,11 +601,11 @@ footer p {
 }
 
 .child-desarrollamos h2 {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .child-desarrollamos p {
-  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-size: clamp(1rem, 2vw, 1rem);
 }
 
 .child-desarrollamos-s {
@@ -573,11 +619,11 @@ footer p {
 }
 
 .child-desarrollamos-s h2 {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .child-desarrollamos-s p {
-  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-size: clamp(1rem, 2vw, 1rem);
 }
 
 
@@ -836,7 +882,8 @@ footer p {
 .parent-rows-t {
   margin-top: 10px;
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 0rem;
 }
 
 .child-rows-t {
@@ -864,7 +911,7 @@ footer p {
 }
 
 .child-rows-t p {
-  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  font-size: 1rem;
   margin: 0px;
   margin-bottom: 50px;
   padding-left: 10%;
@@ -878,18 +925,16 @@ footer p {
 
 .parent-preguntas {
   margin-top: 10px;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: row;
   gap: 0rem;
   color: #B7E00A;
   background-color: white;
 }
 
 .child-preguntas {
-  flex-basis:100%;
+  flex: 1 1 100%;
   margin: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
   font-family: Arial, Helvetica, sans-serif;
   color: #071223;
   text-align: center;
@@ -916,6 +961,7 @@ footer p {
 .parent-grid-c {
   background-color: #000;
   margin-top: 10px;
+  width: 100%;
   display: grid;
   gap: 1rem;
   grid-template-columns: 100%;
@@ -964,7 +1010,7 @@ footer p {
   color: #fff;
   flex: 1 1 auto;
   text-align: center;
-  font-size: clamp(1em, 3vw, 2rem);
+  font-size: clamp(1rem, 3vw, 2rem);
   margin: 0% 0% 5% 0%;
   text-align: center;
 }
@@ -1014,16 +1060,16 @@ input[type=email], select, textarea {
 
 .parent-location {
   margin-top: 10px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   gap: 0rem;
-  grid-template-columns: 50% 50%;
   background-color: white;
 }
 
 .child-location1 {
+  width: 50%;
   font-family:Arial, Helvetica, sans-serif;
   font-weight: bold;
-  flex: 1 1 auto;
   text-align: center;
   position: relative;
   color: white;
@@ -1056,6 +1102,7 @@ input[type=email], select, textarea {
 .child-location p {
   font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: bold;
+  margin: 16px 10%;
 
 }
 
@@ -1068,7 +1115,7 @@ input[type=email], select, textarea {
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
-  margin: 0 20%;
+  margin: 0 20% 16px 20%;
 }
 
 /* clamp(0.5rem, 2vw, 1rem) */
@@ -1188,4 +1235,105 @@ input[type=email], select, textarea {
 
 .item-text p {
   font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+
+
+
+@media (min-width:0px) and (max-width: 576px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .parent-column-new {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .drawer {
+    width: 80%;
+  }
+
+  .child-video h1 {
+    font-size: 1rem;
+    top: 30%; 
+  }
+
+  .child-video p {
+    font-size: 1rem;
+    top: 50%; 
+  }
+
+  .child-video-2 h1 {
+    font-size: 1rem;
+    top: 30%; 
+  }
+
+  .child-video-2 p {
+    font-size: 1rem;
+    top: 50%; 
+  }
+
+  .child-video-3 h1 {
+  top: 40%; 
+}
+
+  .text {
+    font-size: 12px;
+  }
+
+  .child-banner img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .child-banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .child-conocemas {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .child-trabajamos {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .parent-photos {
+    flex-direction: column;
+  }
+
+  .parent-rows-t {
+    flex-direction: column;
+  }
+
+  .child-rows-t p {
+    margin-bottom: 40px;
+  }
+
+  .parent-preguntas {
+    flex-direction: column;
+  }
+
+  .parent-location {
+    flex-direction: column;
+  }
+
+  .child-location1 {
+    width: 100%;
+  }
+
+  .child-location1 img {
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
 }
