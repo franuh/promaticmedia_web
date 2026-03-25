@@ -132,7 +132,7 @@ body {
   font-size: clamp(1rem, 4vw, 3rem); 
   text-align: center;
   /* Optional: Add a text shadow for better legibility */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .child-video p {
@@ -146,7 +146,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
   /* Optional: Add a text shadow for better legibility */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .child-video-2 h1 {
@@ -160,7 +160,7 @@ body {
   font-size: clamp(1rem, 4vw, 3rem); 
   text-align: center;
   /* Optional: Add a text shadow for better legibility */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .child-video-2 p {
@@ -174,7 +174,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
   /* Optional: Add a text shadow for better legibility */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .child-video-3 h1 {
@@ -188,7 +188,7 @@ body {
   font-size: clamp(1.5rem, 4vw, 3rem); 
   text-align: center;
   /* Optional: Add a text shadow for better legibility */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 
@@ -360,6 +360,7 @@ body {
 .child-conocemas button {
   padding: 10px;
   border-radius: 21px;
+  border: solid 1px #000;
   cursor: pointer;
   font-size: 14px;
   background-color: #fff;
@@ -1240,6 +1241,16 @@ input[type=email], select, textarea {
 
 
 
+/* TESTING NEW */
+
+
+
+
+
+
+
+/* MOBILE VERSION */
+
 @media (min-width:0px) and (max-width: 576px) {
   body {
     display: flex;
@@ -1267,8 +1278,8 @@ input[type=email], select, textarea {
   }
 
   .child-video-2 h1 {
-    font-size: 1rem;
-    top: 30%; 
+    font-size: 1.5rem;
+    top: 25%; 
   }
 
   .child-video-2 p {
@@ -1277,8 +1288,9 @@ input[type=email], select, textarea {
   }
 
   .child-video-3 h1 {
-  top: 40%; 
-}
+    font-size: 1.5rem;
+    top: 40%; 
+  }
 
   .text {
     font-size: 12px;
