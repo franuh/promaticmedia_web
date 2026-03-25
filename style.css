@@ -1271,6 +1271,7 @@ input[type=email], select, textarea {
 .hidden-radio:checked + .item-container .item-image {
   display: none; /* Hide the image */
 }
+
 .hidden-radio:checked + .item-container .item-text-parent {
   display: flex;
   flex-direction: column;
