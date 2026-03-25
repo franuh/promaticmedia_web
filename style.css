@@ -1173,39 +1173,38 @@ input[type=email], select, textarea {
 
 
 
-/* Hide the actual radio input */
+/* 
 .hidden-radio {
   display: none;
 }
 
-/* Base state for the container */
+
 .item-container {
-  display: block; /* Ensures the label takes up space */
+  display: block; 
   cursor: pointer;
-  /* Define a specific size to prevent layout shifts */
-  overflow: hidden;
+  
 }
 
 .item-container img {
-  /* Define a specific size to prevent layout shifts */
+  /* Define a specific size to prevent layout shifts 
   width: 100%;
   height: auto;
 }
 
-/* Hide the text by default */
+/* Hide the text by default 
 .item-text {
   display: none;
 }
 
-/* Style when the radio button is checked */
-/* The '+' selector targets the adjacent sibling label */
+/* Style when the radio button is checked 
+/* The '+' selector targets the adjacent sibling label 
 .hidden-radio:checked + .item-container .item-image {
-  display: none; /* Hide the image */
+  display: none; /* Hide the image 
 }
 
 .hidden-radio:checked + .item-container .item-text {
   display: grid;
-  grid-template-columns: 60% 40%; /* Optional: add some padding to the text */
+  grid-template-columns: 60% 40%; /* Optional: add some padding to the text 
   font-family:Arial, Helvetica, sans-serif;
   flex: 1 1 auto;
   position: relative;
@@ -1215,7 +1214,7 @@ input[type=email], select, textarea {
   cursor:default;
 }
 
-/* Optional: style for the text itself */
+/* Optional: style for the text itself 
 .item-text {
     background-color: #000;
     color: #fff;
@@ -1236,14 +1235,85 @@ input[type=email], select, textarea {
 
 .item-text p {
   font-size: clamp(0.75rem, 2vw, 1rem);
-}
+} */
 
 
 
 
 /* TESTING NEW */
 
+/* Hide the actual radio input */
+.hidden-radio {
+  display: none;
+}
 
+/* Base state for the container */
+.item-container {
+  display: block; /* Ensures the label takes up space */
+  cursor: pointer;
+  /* Define a specific size to prevent layout shifts */
+  overflow: hidden;
+}
+
+.item-container img {
+  /* Define a specific size to prevent layout shifts */
+  width: 100%;
+  height: auto;
+}
+
+/* Hide the text by default */
+.item-text-parent {
+  display: none;
+}
+
+/* Style when the radio button is checked */
+/* The '+' selector targets the adjacent sibling label */
+.hidden-radio:checked + .item-container .item-image {
+  display: none; /* Hide the image */
+}
+.hidden-radio:checked + .item-container .item-text-parent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  margin-top: 10px;
+  cursor: default;
+}
+
+.hidden-radio:checked + .item-container .item-text-child {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.hidden-radio:checked + .item-container .item-text-child-g {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.item-text-child-g img {
+  display: block;
+  width: 700px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.item-text-child h2 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
 
 
 
@@ -1346,6 +1416,11 @@ input[type=email], select, textarea {
     height: auto;
     width: 100%;
     object-fit: cover;
+  }
+
+  .item-text-child-g img {
+    width: 100%;
+    height: 200px;
   }
 
 }
