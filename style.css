@@ -1364,6 +1364,10 @@ input[type=email], select, textarea {
     top: 40%; 
   }
 
+  .centered {
+    font-size: 20px;
+  }
+
   .text {
     font-size: 16px;
   }
@@ -1384,6 +1388,15 @@ input[type=email], select, textarea {
     padding-right: 10%;
   }
 
+  .grand-rows-t {
+    margin-top: 10px;
+  }
+
+  .grand-rows-t h1 {
+    padding-top: 0px;
+    margin: 25px 0 20px 0;
+  }
+
   .child-trabajamos {
     padding-left: 10%;
     padding-right: 10%;
@@ -1395,6 +1408,10 @@ input[type=email], select, textarea {
 
   .parent-rows-t {
     flex-direction: column;
+  }
+
+  .child-rows-t h2 {
+    font-size: 18px;
   }
 
   .child-rows-t p {
